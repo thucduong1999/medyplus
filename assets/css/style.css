@@ -1,0 +1,220 @@
+/* Source */
+@font-face {
+  font-family: 'Poppins';
+  src: url(/assets/fonts/Poppins/Poppins-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url(/assets/fonts/Poppins/Poppins-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url(/assets/fonts/Poppins/Poppins-SemiBold.ttf);
+  font-weight: 600;
+}
+/* Header Footer*/
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #000;
+  text-decoration: #000;
+}
+a:hover {
+  color: #000;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+input {
+  padding: 0;
+}
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+body {
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: normal;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-btn::after {
+  content: url(/assets/img/down-arrow.png);
+  vertical-align: middle;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #222;
+}
+.header-top {
+  font-size: 12px;
+  font-weight: 500;
+  background-color: #222;
+  color: #bababa;
+  padding: 18px 0;
+}
+.header-top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-top-inner .web-info {
+  display: flex;
+  align-items: center;
+}
+.header-top-inner .web-info-btn {
+  display: flex;
+  align-items: center;
+  margin-right: 22px;
+}
+.header-top-inner .web-info-btn .info-icon {
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #0ca8c9;
+  color: #0ca8c9;
+  margin-right: 10px;
+}
+.header-top-inner .web-info-btn .info-content .description a {
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.01em;
+}
+.header-top-inner .sl-language img {
+  width: 17px;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+.header-top-inner .sl-language .dropdown-btn::after {
+  margin-inline-start: 24px;
+}
+.header-top-inner .sl-language .dropdown-opt,
+.header-top-inner .sl-language a {
+  color: #bababa;
+}
+.header-top-inner .sl-language .dropdown-opt:hover,
+.header-top-inner .sl-language a:hover {
+  background-color: #fff;
+  color: #000;
+}
+.header-bot {
+  padding: 26px 0;
+}
+.header-bot-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-bot-inner .logo {
+  height: 46px;
+}
+.header-bot .form-control {
+  display: flex;
+  align-items: center;
+}
+.header-bot .form-control .search {
+  width: 556px;
+}
+.header-bot .form-control .search form {
+  height: 38px;
+  border: 1px solid #bababa;
+  display: flex;
+  border-radius: 40px;
+  overflow: hidden;
+}
+.header-bot .form-control .search form .search-sl {
+  line-height: 38px;
+  padding-left: 21px;
+  padding-right: 32px;
+}
+.header-bot .form-control .search form .search-sl select {
+  border: none;
+  height: 24px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(/assets/img/down-arrow.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  padding-right: 27px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 12px;
+  color: #8f8f8f;
+}
+.header-bot .form-control .search form .search-input {
+  flex: 1;
+  line-height: 38px;
+}
+.header-bot .form-control .search form .search-input input {
+  width: 100%;
+  border: none;
+  height: 24px;
+  border-left: 1px solid #e0e0e0;
+  padding-left: 19px;
+}
+.header-bot .form-control .search form .search-input input::placeholder {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+}
+.header-bot .form-control .search form .search-btn button {
+  border: none;
+  background-color: #0ca8c9;
+  color: #fff;
+  font-size: 18px;
+  height: 38px;
+  line-height: 38px;
+  width: 57px;
+  text-align: center;
+}
+.header-bot .form-control .control-item {
+  color: #0ca8c9;
+  font-size: 26px;
+  margin-left: 20px;
+}
+.header-bot .form-control .cart {
+  padding-right: 8px;
+  position: relative;
+}
+.header-bot .form-control .cart::after {
+  content: attr(data);
+  font-size: 10px;
+  color: #fff;
+  display: block;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #222;
+  position: absolute;
+  top: 3px;
+  right: 0;
+}
+/* Content */
+/* Responsive */
+/*# sourceMappingURL=style.css.map */

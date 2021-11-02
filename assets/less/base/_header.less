@@ -1,0 +1,159 @@
+.header {
+    // Header-Top
+    &-top {
+        font-size: 12px;
+        font-weight: 500;
+        background-color: @color-222;
+        color: @color-bababa;
+        padding: 18px 0;
+        &-inner {
+            .flex();
+            .web-info {
+                display: flex;
+                align-items: center;
+                &-btn {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 22px;
+                    .info-icon {
+                        font-size: 16px;
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: center;
+                        border: 1px solid @color-0ca8c9;
+                        color: @color-0ca8c9;
+                        margin-right: 10px;
+                    }
+                    .info-content {
+                        .title {
+
+                        }
+                        .description {
+                            a {
+                                font-weight: 400;
+                                color: @color-white;
+                                letter-spacing: 0.01em;
+                            }
+                        }
+                    }
+                }
+            }
+            .sl-language {
+                img {
+                    width: 17px;
+                    vertical-align: middle;
+                    padding-right: 10px;
+                }
+                .dropdown-btn::after {
+                    margin-inline-start: 24px;
+                }
+                .dropdown-opt,
+                a {
+                    color: @color-bababa;
+                    &:hover {
+                        background-color: @color-white;
+                        color: @color-black;
+                    }
+                }
+            }
+        }
+    }
+
+    // Header-Bot
+    &-bot {
+        padding: 26px 0;
+        &-inner {
+            .flex();
+            .logo {
+                height: 46px;
+            }
+        }
+        .form-control {
+            display: flex;
+            align-items: center;
+            .search {
+                width: 556px;
+                form {
+                    height: 38px;
+                    border: 1px solid @color-bababa;
+                    display: flex;
+                    border-radius: 40px;
+                    overflow: hidden;
+                    .search-sl {
+                        line-height: 38px;
+                        padding-left: 21px;
+                        padding-right: 32px;
+                        select {
+                            border: none;
+                            height: 24px;
+                            .appearance(none);
+                            background-image: url(/assets/img/down-arrow.png);
+                            background-repeat: no-repeat;
+                            background-position-x: right;
+                            background-position-y: center;
+                            padding-right: 27px;
+                            font-family: 'Poppins';
+                            font-weight: 500;
+                            font-size: 12px;
+                            color: @color-8f8f8f;
+                        }
+                    }
+                    .search-input {
+                        flex: 1;
+                        line-height: 38px;
+                        input {
+                            width: 100%;
+                            border: none;
+                            height: 24px;
+                            border-left: 1px solid #e0e0e0;
+                            padding-left: 19px;
+                            &::placeholder {
+                                font-family: 'Poppins';
+                                font-weight: 500;
+                                font-size: 12px;
+                                letter-spacing: 0.01em;
+                            }
+                        }
+                    }
+                    .search-btn{
+                        button {
+                            border: none;
+                            background-color: @color-0ca8c9;
+                            color: @color-white;
+                            font-size: 18px;
+                            height: 38px;
+                            line-height: 38px;
+                            width: 57px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            .control-item {
+                color: @color-0ca8c9;
+                font-size: 26px;
+                margin-left: 20px;
+            }
+            .cart {
+                padding-right: 8px;
+                position: relative;
+                &::after {
+                    content: attr(data);
+                    font-size: 10px;
+                    color: @color-white;
+                    display: block;
+                    width: 15px;
+                    height: 15px;
+                    line-height: 15px;
+                    text-align: center;
+                    border-radius: 15px;
+                    background-color: @color-222;
+                    position: absolute;
+                    top: 3px;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
