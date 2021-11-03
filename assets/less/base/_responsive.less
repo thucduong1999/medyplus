@@ -1,0 +1,130 @@
+@media all and (max-width: 1170px) {
+
+}
+@media all and (max-width: 1024px) {
+    #header {
+        .logo-mobile {
+            display: block;
+        }
+        .header {
+            &-top {
+                &-inner {
+                    .web-info {
+                        &-btn {
+                            margin: 0;
+                            .info-content {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            &-bot {
+                &-inner {
+                    .logo {
+                        display: none;
+                    }
+                }
+                .form-control {
+                    width: 100%;
+                    .search {
+                        width: 100%;
+                        order: 2;
+                    } 
+                    .setting {
+                        order: 1;
+                        margin-left: 0;
+                        margin-right: 20px;
+                    }
+                    .cart {
+                        order: 3;
+                    }
+                }
+            }
+        }
+    }
+    #menubar {
+        .menu-bar {
+            &-inner {
+                nav {
+                    .nav-icon {
+                        display: block;
+                    }
+                    .navbar {
+                        .transition(all, .5s);
+                        .nav-title {
+                            display: block;
+                        }
+                        .transform(translateX(110%));
+                        position: fixed;
+                        top: 0;
+                        right: 0;
+                        z-index: 999;
+                        background-color: @color-white;
+                        height: 100vh;
+                        width: 30vw;
+                        -webkit-box-shadow: -10px 10px 8px -5px rgba(187,187,187,1);
+                        -moz-box-shadow: -10px 10px 8px -5px rgba(187,187,187,1);
+                        box-shadow: -10px 10px 8px -5px rgba(187,187,187,1);
+                        li {
+                            display: block;
+                            margin: 0;
+                            padding: 15px;
+                            border-bottom: 1px solid #bbb;
+                            a {
+                                color: @color-0ca8c9;
+                            }
+                        }
+                    }
+                    .active {
+                        .transform(translateX(0));
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 768px) {
+    
+}
+@media all and (max-width: 576px) {
+    #header {
+        .header {
+            &-top {
+                &-inner {
+                    .sl-language {
+                        .dropdown-btn::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            &-bot {
+                .form-control {
+                    .search {
+                        form {
+                            .search-sl {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #menubar {
+        .menu-bar {
+            &-inner {
+                nav {
+                    .navbar {
+                        height: 100vh;
+                        width: 50vw;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 375px) {
+    
+}

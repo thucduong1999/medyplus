@@ -4,8 +4,27 @@
     align-items: center;
 }
 
+// select
 .appearance (@canet) {
     appearance: @canet;
     -webkit-appearance: @canet;
     -moz-appearance: @canet;
+}
+
+//transform
+.transform (@scale) {
+    transform: @scale;
+    -webkit-transform: @scale;
+    -moz-transform: @scale;
+    -ms-transform: @scale;
+    -o-transform: @scale;
+}
+
+//transition
+.transition (@attr, @sec) {
+    transition: @attr, @sec;
+    -webkit-transition: @attr, @sec;
+    -moz-transition: @attr, @sec;
+    -ms-transition: @attr, @sec;
+    -o-transition: @attr, @sec;
 }
