@@ -28,3 +28,10 @@
     -ms-transition: @attr, @sec;
     -o-transition: @attr, @sec;
 }
+
+// Col
+.col (@col) {
+    width: calc(100% / 12 * @col);
+    padding: 0 15px;
+    box-sizing: border-box;
+}
