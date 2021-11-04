@@ -459,6 +459,33 @@ body {
   padding-bottom: 5px;
   border-bottom: 2px solid #0ca8c9;
 }
+.strength {
+  height: 163px;
+  display: flex;
+  align-items: center;
+}
+.strength-item {
+  width: calc(100% / 12 * 3);
+  padding: 0 15px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.strength-item .item-icon img {
+  vertical-align: middle;
+}
+.strength-item .item-content {
+  padding-left: 20px;
+}
+.strength-item .item-content .title {
+  font-weight: 600;
+  color: #000;
+}
+.strength-item .item-content .detail {
+  font-weight: 400;
+  font-size: 14px;
+  color: #8f8f8f;
+}
 /* Responsive */
 @media all and (max-width: 1170px) {
   .slider-content {
@@ -550,6 +577,12 @@ body {
     font-size: 40px;
     line-height: 50px;
   }
+  .strength-item {
+    width: calc(100% / 12 * 6);
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 15px 0;
+  }
 }
 @media all and (max-width: 768px) {
   #menubar .menu-bar-inner nav .navbar {
@@ -558,6 +591,9 @@ body {
   }
   .slider-content {
     top: 15%;
+  }
+  .slider-content-inner {
+    margin-left: 60px;
   }
   .slider-content-inner .slide-title {
     font-size: 30px;
@@ -569,6 +605,12 @@ body {
     padding-bottom: 20px;
   }
   .slider-content-inner .slide-btn {
+    font-size: 12px;
+  }
+  .strength-item .item-content {
+    font-size: 14px;
+  }
+  .strength-item .item-content .detail {
     font-size: 12px;
   }
 }
@@ -602,18 +644,39 @@ body {
     top: 15%;
   }
   .slider-content-inner {
+    width: calc(100% / 12 * 9);
+    padding: 0 15px;
+    box-sizing: border-box;
     margin-left: 15px;
   }
   .slider-content-inner .slide-title {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 20px;
   }
   .slider-content-inner .slide-summary {
-    font-size: 10px;
+    font-size: 12px;
     padding: 8px 0;
   }
   .slider-content-inner .slide-btn {
-    font-size: 6px;
+    font-size: 8px;
+  }
+  .strength-item {
+    margin: 15px 0;
+    width: calc(100% / 12 * 6);
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  .strength-item .item-icon img {
+    width: 30px;
+  }
+  .strength-item .item-content {
+    padding-left: 14px;
+  }
+  .strength-item .item-content .title {
+    font-size: 12px;
+  }
+  .strength-item .item-content .detail {
+    font-size: 8px;
   }
 }
 /*# sourceMappingURL=style.css.map */

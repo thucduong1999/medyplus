@@ -1,0 +1,27 @@
+.strength {
+    height: 163px;
+    display: flex;
+    align-items: center;
+    &-item {
+        .col(3);
+        display: flex;
+        align-items: center;
+        .item-icon {
+            img {
+                vertical-align: middle;
+            }
+        }
+        .item-content {
+            padding-left: 20px;
+            .title {
+                font-weight: 600;
+                color: @color-black;
+            }
+            .detail {
+                font-weight: 400;
+                font-size: 14px;
+                color: @color-8f8f8f;
+            }
+        }
+    }
+}
