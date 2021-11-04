@@ -107,7 +107,38 @@
     .strength {
         &-item {
             .col(6);
-            margin: 15px 0;
+        }
+    }
+    .banner {
+        .title {
+            font-size: 22px;
+        }
+        .detail {
+            font-size: 14px;
+        }
+        &-left {
+            &-detail {
+                bottom: 30px;
+                .banner-countdown {
+                    margin-bottom: 10px;
+                }
+                .banner-left-content {
+                    line-height: 24px;
+                }
+            }
+        }
+        &-right {
+            &-item {
+                .banner-right-content {
+                    .sale-num {
+                        font-size: 50px;
+                        line-height: 40px;
+                    }
+                    .title-discount {
+                        font-size: 20px;
+                    }
+                }
+            }
         }
     }
 }
@@ -154,7 +185,27 @@
             }
         }
     }
-
+    .banner {
+        &-left {
+            width: 100%;
+            &-detail {
+                bottom: 40px;
+                .banner-countdown {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        &-right {
+            width: 100%;
+            .banner-col {
+                display: flex;
+                margin: 0 -15px;
+            }
+            &-item {
+                padding: 0 15px;
+            }
+        }
+    }
 }
 @media all and (max-width: 576px) {
     #header {
@@ -208,17 +259,18 @@
     }
     .slider {
         &-content {
-            top: 15%;
+            top: 10%;
             &-inner {
                 .col(9);
                 margin-left: 15px;
                 .slide-title {
                     font-size: 24px;
-                    line-height: 20px;
+                    line-height: 25px;
                 }
                 .slide-summary {
                     font-size: 12px;
-                    padding: 8px 0;
+                    padding-top: 8px;
+                    padding-bottom: 0;
                 }
                 .slide-btn {
                     font-size: 8px;
@@ -242,6 +294,47 @@
                 }
                 .detail {
                     font-size: 8px;
+                }
+            }
+        }
+    }
+    .banner {
+        .title {
+            font-size: 21px;
+        }
+        &-left {
+            &-detail {
+                .banner-countdown {
+                    margin-bottom: 20px;
+                    .times {
+                        width: 50px;
+                        height: 50px;
+                        font-size: 10px;
+                        span {
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .banner-left-content {
+                    line-height: 21px;
+                }
+            }
+        }
+        &-right {
+            width: 100%;
+            .banner-col {
+                display: block;
+                margin: -15px 0;
+            }
+            &-item {
+                padding: 15px 0;
+                .banner-right-content {
+                    .sale-num {
+                        font-size: 45px;
+                    }
+                    .title-discount {
+                        font-size: 18px;
+                    }
                 }
             }
         }
