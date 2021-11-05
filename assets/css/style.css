@@ -765,6 +765,79 @@ body {
 .news-item-content .time span {
   color: #0ca8c9;
 }
+.newsletter {
+  background-color: #222;
+}
+.newsletter-inner {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 99px 0;
+}
+.newsletter-title {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 26px;
+}
+.newsletter-detail {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
+  padding-top: 18px;
+  padding-bottom: 55px;
+  letter-spacing: 0.01em;
+}
+.newsletter-control {
+  display: flex;
+  justify-content: center;
+}
+.newsletter-control .newsletter-input {
+  width: 770px;
+}
+.newsletter-control .newsletter-input form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 68px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 70px;
+  overflow: hidden;
+}
+.newsletter-control .newsletter-input form .email-input {
+  flex: 1;
+  line-height: 68px;
+}
+.newsletter-control .newsletter-input form .email-input input {
+  width: 100%;
+  border: none;
+  height: 58px;
+  margin: 0 20px;
+  padding: 0 10px;
+}
+.newsletter-control .newsletter-input form .email-input input::placeholder {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 13px;
+}
+.newsletter-control .newsletter-input form .email-btn {
+  margin-right: 7px;
+}
+.newsletter-control .newsletter-input form .email-btn button {
+  border: none;
+  background-color: #0ca8c9;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  padding: 0 53px;
+  height: 58px;
+  line-height: 58px;
+  text-align: center;
+  border-radius: 58px;
+  text-transform: uppercase;
+}
 /* Responsive */
 @media all and (max-width: 1170px) {
   .slider-content {
@@ -893,6 +966,9 @@ body {
   .top-selling-content .cost-discount .discount {
     font-size: 11px;
   }
+  .newsletter-control {
+    margin: 0 15px;
+  }
 }
 @media all and (max-width: 768px) {
   #menubar .menu-bar-inner nav .navbar {
@@ -971,6 +1047,12 @@ body {
   }
   .news-item {
     width: 100%;
+  }
+  .newsletter-title {
+    font-size: 28px;
+  }
+  .newsletter-control .newsletter-input form .email-btn button {
+    padding: 0 35px;
   }
 }
 @media all and (max-width: 576px) {
@@ -1095,6 +1177,27 @@ body {
   }
   .news-heading {
     font-size: 24px;
+  }
+  .newsletter-title {
+    font-size: 18px;
+  }
+  .newsletter-detail {
+    font-size: 10px;
+  }
+  .newsletter-control .newsletter-input form {
+    height: 58px;
+  }
+  .newsletter-control .newsletter-input form .email-input {
+    line-height: 58px;
+  }
+  .newsletter-control .newsletter-input form .email-input input {
+    height: 48px;
+  }
+  .newsletter-control .newsletter-input form .email-btn button {
+    padding: 0 15px;
+    font-size: 13px;
+    height: 48px;
+    line-height: 48px;
   }
 }
 /*# sourceMappingURL=style.css.map */

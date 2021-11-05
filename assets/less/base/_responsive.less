@@ -154,6 +154,11 @@
             }
         }
     }
+    .newsletter {
+        &-control {
+            margin: 0 15px;
+        }
+    }
 }
 @media all and (max-width: 768px) {
     #menubar {
@@ -250,6 +255,22 @@
         }
         &-item {
             width: 100%;
+        }
+    }
+    .newsletter {
+        &-title {
+            font-size: 28px;
+        }
+        &-control {
+            .newsletter-input {
+                form {
+                    .email-btn {
+                        button {
+                            padding: 0 35px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -413,6 +434,35 @@
         }
         &-heading {
             font-size: 24px;
+        }
+    }
+    .newsletter {
+        &-title {
+            font-size: 18px;
+        }
+        &-detail {
+            font-size: 10px;
+        }
+        &-control {
+            .newsletter-input {
+                form {
+                    height: 58px;
+                    .email-input {
+                        line-height: 58px;
+                        input {
+                            height: 48px;
+                        }
+                    }
+                    .email-btn {
+                        button {
+                            padding: 0 15px;
+                            font-size: 13px;
+                            height: 48px;
+                            line-height: 48px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

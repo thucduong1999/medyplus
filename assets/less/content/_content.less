@@ -288,3 +288,74 @@
     }
 }
 
+.newsletter {
+    background-color: @color-222;
+    &-inner {
+        width: 100%;
+        text-align: center;
+        color: @color-white;
+        padding: 99px 0;
+    }
+    &-title {
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        line-height: 26px;
+    }
+    &-detail {
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 500;
+        padding-top: 18px;
+        padding-bottom: 55px;
+        letter-spacing: 0.01em;
+    }
+    &-control {
+        display: flex;
+        justify-content: center;
+        .newsletter-input {
+            width: 770px;
+            form {
+                .flex();
+                height: 68px;
+                border: 1px solid #ddd;
+                background-color: @color-white;
+                border-radius: 70px;
+                overflow: hidden;
+                .email-input {
+                    flex: 1;
+                    line-height: 68px;
+                    input {
+                        width: 100%;
+                        border: none;
+                        height: 58px;
+                        margin: 0 20px;
+                        padding: 0 10px;
+                        &::placeholder {
+                            font-family: 'Poppins';
+                            font-weight: 400;
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .email-btn {
+                    margin-right: 7px;
+                    button {
+                        border: none;
+                        background-color: @color-0ca8c9;
+                        color: @color-white;
+                        font-size: 16px;
+                        font-family: 'Poppins';
+                        font-weight: 500;
+                        padding: 0 53px;
+                        height: 58px;
+                        line-height: 58px;
+                        text-align: center;
+                        border-radius: 58px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
