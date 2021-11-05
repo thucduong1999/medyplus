@@ -605,7 +605,7 @@ body {
 }
 .top-selling .slide-selling .slick-prev {
   left: auto;
-  top: 70px;
+  top: -70px;
   right: 50px;
   z-index: 10;
 }
@@ -627,7 +627,7 @@ body {
 }
 .top-selling .slide-selling .slick-next {
   right: 0;
-  top: 70px;
+  top: -70px;
   z-index: 10;
 }
 .top-selling .slide-selling .slick-next::before {
@@ -654,7 +654,6 @@ body {
   text-transform: uppercase;
   margin-top: 30px;
   margin-bottom: 19px;
-  margin-left: -5px;
 }
 .top-selling-heading {
   position: absolute;
@@ -662,14 +661,8 @@ body {
   line-height: 42px;
   color: #000;
   text-transform: uppercase;
-  left: 11.7%;
   bottom: 24px;
   letter-spacing: 0.01em;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
 }
 .top-selling-item {
   width: calc(100% / 12 * 3);
@@ -678,12 +671,15 @@ body {
   box-sizing: border-box;
   margin: 27px 0;
 }
+.top-selling-item img {
+  width: 100%;
+}
 .top-selling-content {
   font-size: 14px;
   color: #000;
   text-align: center;
   letter-spacing: 0.015em;
-  margin-top: 0;
+  margin-top: 7px;
 }
 .top-selling-content .title {
   padding: 9px 0;
@@ -824,6 +820,15 @@ body {
   .banner-right-item .banner-right-content .title-discount {
     font-size: 20px;
   }
+  .top-selling-content {
+    font-size: 12px;
+  }
+  .top-selling-content .cost {
+    font-size: 11px;
+  }
+  .top-selling-content .cost-discount .discount {
+    font-size: 11px;
+  }
 }
 @media all and (max-width: 768px) {
   #menubar .menu-bar-inner nav .navbar {
@@ -872,6 +877,27 @@ body {
   }
   .banner-right-item {
     padding: 0 15px;
+  }
+  .top-selling-place {
+    font-size: 70px;
+  }
+  .top-selling-heading {
+    font-size: 32px;
+  }
+  .top-selling-item {
+    width: calc(100% / 12 * 6);
+    padding: 0 15px;
+    margin: 15px 0;
+    box-sizing: border-box;
+  }
+  .top-selling-content {
+    font-size: 14px;
+  }
+  .top-selling-content .cost {
+    font-size: 13px;
+  }
+  .top-selling-content .cost-discount .discount {
+    font-size: 13px;
   }
 }
 @media all and (max-width: 576px) {
@@ -972,6 +998,24 @@ body {
   }
   .banner-right-item .banner-right-content .title-discount {
     font-size: 18px;
+  }
+  .top-selling-place {
+    font-size: 44px;
+  }
+  .top-selling-heading {
+    font-size: 24px;
+  }
+  .top-selling-item {
+    width: 100%;
+  }
+  .top-selling-content {
+    font-size: 14px;
+  }
+  .top-selling-content .cost {
+    font-size: 13px;
+  }
+  .top-selling-content .cost-discount .discount {
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=style.css.map */

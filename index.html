@@ -266,11 +266,11 @@
                 <!-- Top-selling -->
                 <div class="top-selling">
                     <div class="container">
+                        <div class="top-selling-place">products
+                            <div class="top-selling-heading">top selling</div>
+                        </div>
                         <div class="slide-selling">
                             <div class="slide-selling-list">
-                                <div class="top-selling-place">products
-                                    <div class="top-selling-heading">top selling</div>
-                                </div>
                                 <div class="row">
                                     <div class="top-selling-item">
                                         <img src="/assets/img/selling_item1.jpg" alt="">
@@ -334,9 +334,6 @@
                                 </div>
                             </div>
                             <div class="slide-selling-list">
-                                <div class="top-selling-place">products
-                                    <div class="top-selling-heading">top selling</div>
-                                </div>
                                 <div class="row">
                                     <div class="top-selling-item">
                                         <img src="/assets/img/selling_item1.jpg" alt="">
@@ -444,7 +441,16 @@
                 }
             }]
         })
-        $('.slide-selling').slick();
+        $('.slide-selling').slick({
+            dots: false,
+            responsive: [{
+                breakpoint: 769,
+                settings: {
+                    infinite: true,
+                    arrows: false
+                }
+            }]
+        });
     </script>
 </body>
 </html>
