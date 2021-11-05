@@ -318,6 +318,11 @@ body {
 }
 /* Content */
 .slider .slick-arrow {
+  width: 50px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #fff;
   transition: all, 0.5s;
   -webkit-transition: all, 0.5s;
@@ -701,6 +706,65 @@ body {
   padding: 0 10px;
   font-size: 13px;
 }
+.news {
+  margin-top: 30px;
+  padding: 80px 0;
+  background: url('/assets/img/background_news.jpg') top center / cover no-repeat;
+}
+.news-place {
+  text-align: center;
+  position: relative;
+  font-size: 90px;
+  font-weight: 600;
+  color: #ebebeb;
+  line-height: 90px;
+  text-transform: uppercase;
+  margin-top: 7px;
+  margin-bottom: 32px;
+}
+.news-heading {
+  position: absolute;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 42px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  bottom: 24px;
+  width: 100%;
+  text-align: center;
+}
+.news-item {
+  width: calc(100% / 12 * 4);
+  padding: 0 15px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.news-item img {
+  display: block;
+  width: 100%;
+}
+.news-item-content {
+  letter-spacing: 0.02em;
+}
+.news-item-content .title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #000;
+  padding-top: 25px;
+  padding-bottom: 8px;
+}
+.news-item-content .time {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #8f8f8f;
+}
+.news-item-content .time span {
+  color: #0ca8c9;
+}
 /* Responsive */
 @media all and (max-width: 1170px) {
   .slider-content {
@@ -899,6 +963,15 @@ body {
   .top-selling-content .cost-discount .discount {
     font-size: 13px;
   }
+  .news-place {
+    font-size: 70px;
+  }
+  .news-heading {
+    font-size: 32px;
+  }
+  .news-item {
+    width: 100%;
+  }
 }
 @media all and (max-width: 576px) {
   #header .header-top-inner .sl-language .dropdown-btn::after {
@@ -1016,6 +1089,12 @@ body {
   }
   .top-selling-content .cost-discount .discount {
     font-size: 13px;
+  }
+  .news-place {
+    font-size: 44px;
+  }
+  .news-heading {
+    font-size: 24px;
   }
 }
 /*# sourceMappingURL=style.css.map */
