@@ -222,6 +222,9 @@ body {
   font-size: 26px;
   margin-left: 20px;
 }
+#header .header-bot .form-control .control-item i:hover {
+  cursor: pointer;
+}
 #header .header-bot .form-control .cart {
   padding-right: 8px;
   position: relative;
