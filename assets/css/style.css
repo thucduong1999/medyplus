@@ -1010,6 +1010,12 @@ body {
   #header .header-bot .form-control .cart {
     order: 3;
   }
+  #menubar .menu-bar-inner .menu-category {
+    display: none;
+  }
+  #menubar .menu-bar-inner nav {
+    margin-left: auto;
+  }
   #menubar .menu-bar-inner nav .nav-icon {
     display: block;
   }

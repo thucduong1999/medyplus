@@ -16,9 +16,4 @@ $(document).ready(function () {
         $('.navbar').removeClass('active');
         $('.cover').removeClass('active');
     });
-    $('.dropdown').click(function (e) { 
-        e.preventDefault();
-        $(this).find('.dropdown-content').toggle('hidden');
-        $(this).siblings().toggle('show');
-    });
 });
