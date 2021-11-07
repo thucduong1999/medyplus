@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // Click để hiện thông tin web
-    $('.info-icon').click(function (e) { 
+    $('.web-info-btn').click(function (e) { 
         e.preventDefault();
         $(this).find('.info-content').toggle('show');
         $(this).siblings().toggle('hidden');
@@ -15,5 +15,10 @@ $(document).ready(function () {
         e.preventDefault();
         $('.navbar').removeClass('active');
         $('.cover').removeClass('active');
+    });
+    $('.dropdown').click(function (e) { 
+        e.preventDefault();
+        $(this).find('.dropdown-content').toggle('hidden');
+        $(this).siblings().toggle('show');
     });
 });
