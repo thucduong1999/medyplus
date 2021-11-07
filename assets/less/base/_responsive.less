@@ -1,4 +1,18 @@
 @media all and (max-width: 1170px) {
+    #menubar {
+        .menu-bar {
+            &-inner {
+                .menu-category {
+                    .dropdown {
+                        &-content {
+                            max-width: 97%;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .slider {
         &-content {
             top: 20%;
@@ -189,10 +203,34 @@
         }
     }
 }
+@media all and (max-width: 896px) {
+    #menubar {
+        .menu-bar {
+            &-inner {
+                .menu-category {
+                    .dropdown {
+                        &-content {
+                            max-width: 96%;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media all and (max-width: 768px) {
     #menubar {
         .menu-bar {
             &-inner {
+                .menu-category {
+                    .dropdown {
+                        &-content {
+                            max-width: 96%;
+                            width: 100%;
+                        }
+                    }
+                }
                 nav {
                     .navbar {
                         height: 100vh;
@@ -359,8 +397,16 @@
         .menu-bar {
             font-size: 12px;
             &-inner {
-                .menu-category i {
-                    font-size: 18px;
+                .menu-category {
+                    .dropdown {
+                        &-content {
+                            max-width: 93.5%;
+                            width: 100%;
+                        }
+                    }
+                    i {
+                        font-size: 18px;
+                    }
                 }
                 nav {
                     .nav-icon {
@@ -554,6 +600,20 @@
     }
 }
 @media all and (max-width: 375px) {
+    #menubar {
+        .menu-bar {
+            &-inner {
+                .menu-category {
+                    .dropdown {
+                        &-content {
+                            max-width: 92%;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .slider {
         &-content {
             top: 0;
