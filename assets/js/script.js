@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // Click để hiện thông tin web
-    $('.web-info-btn').click(function (e) { 
+    $('.info-icon').click(function (e) { 
         e.preventDefault();
         $(this).find('.info-content').toggle('show');
         $(this).siblings().toggle('hidden');

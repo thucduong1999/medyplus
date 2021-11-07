@@ -123,6 +123,7 @@ body {
   font-weight: 400;
   color: #fff;
   letter-spacing: 0.01em;
+  text-decoration: none;
 }
 #header .header-top-inner .sl-language img {
   width: 17px;
@@ -135,6 +136,7 @@ body {
 #header .header-top-inner .sl-language .dropdown-opt,
 #header .header-top-inner .sl-language a {
   color: #bababa;
+  text-decoration: none;
 }
 #header .header-top-inner .sl-language .dropdown-opt:hover,
 #header .header-top-inner .sl-language a:hover {
@@ -269,6 +271,7 @@ body {
 }
 .menu-bar-inner .menu-category .dropdown-content a {
   color: #fff;
+  text-decoration: none;
 }
 .menu-bar-inner .menu-category .dropdown-content .dropdown-opt {
   padding: 5px 0;
@@ -312,6 +315,7 @@ body {
 .menu-bar-inner nav .navbar li a {
   text-transform: uppercase;
   color: #fff;
+  text-decoration: none;
 }
 .menu-bar-inner nav .navbar li:last-child {
   margin-right: 0;
@@ -876,6 +880,7 @@ body {
 }
 #footer .footer-top-item .detail a {
   color: #8f8f8f;
+  text-decoration: none;
 }
 #footer .footer-top-item .detail-btn {
   display: flex;
