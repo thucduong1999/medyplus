@@ -1,0 +1,109 @@
+#footer {
+    .footer {
+        &-top {
+            background-color: #f2f2f2;
+            padding-top: 37px;
+            padding-bottom: 5px;
+            &-item {
+                .col(3);
+                .title {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: @color-black;
+                    text-transform: uppercase;
+                    letter-spacing: 0.01em;
+                }
+                .detail {
+                    font-size: 13px;
+                    font-weight: 500;
+                    line-height: 39px;
+                    margin-top: 19px;
+                    margin-bottom: 30px;
+                    a {
+                        color: @color-8f8f8f;
+                    }
+                    &-btn {
+                        display: flex;
+                        .icon {
+                            font-size: 16px;
+                            line-height: 22px;
+                            color: @color-0ca8c9;
+                            padding-right: 22px;
+                        }
+                        .mobile-icon {
+                            padding-left: 3px;
+                        }
+                        .mail-icon {
+                            i {
+                                vertical-align: bottom;
+                            }
+                        }
+                        .text {
+                            word-break: break-all;
+                            letter-spacing: 0.02em;
+                        }
+                        .lh-20 {
+                            line-height: 20px;
+                        }
+                        &:hover a {
+                            color: @color-0ca8c9;
+                        }
+                    }
+                    &-item {
+                        &:hover a {
+                            color: @color-0ca8c9;
+                        }
+                    }
+                }
+                .social {
+                    margin-left: -10px;
+                    .icon {
+                        font-size: 13px;
+                        line-height: 30px;
+                        color: @color-8f8f8f;
+                        padding: 0 10px;
+                        &:hover {
+                            color: @color-0ca8c9;
+                        }
+                    }
+                }
+                .inner {
+                    .col(8);
+                    margin: 0;
+                    margin-left: auto;
+                    margin-right: 3px;
+                    .detail {
+                        margin-top: 8px;
+                        line-height: 36px;
+                    }
+                }
+            }
+        }
+        &-bot {
+            padding: 10px 0;
+            &-inner {
+                .flex();
+                .copyright {
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: @color-8f8f8f;
+                    letter-spacing: 0.01em;
+                    span {
+                        color: @color-0ca8c9;
+                    }
+                }
+                .payments {
+                    display: flex;
+                    margin-right: -14px;
+                    &-item {
+                        padding: 0 14px;
+                    }
+                    img {
+                        display: block;
+                        width: 48px;
+                    }
+                }
+            }
+        }
+    }
+}

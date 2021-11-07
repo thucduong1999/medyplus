@@ -849,6 +849,115 @@ body {
   margin: 15px 0;
   box-sizing: border-box;
 }
+#footer .footer-top {
+  background-color: #f2f2f2;
+  padding-top: 37px;
+  padding-bottom: 5px;
+}
+#footer .footer-top-item {
+  width: calc(100% / 12 * 3);
+  padding: 0 15px;
+  margin: 15px 0;
+  box-sizing: border-box;
+}
+#footer .footer-top-item .title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+#footer .footer-top-item .detail {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 39px;
+  margin-top: 19px;
+  margin-bottom: 30px;
+}
+#footer .footer-top-item .detail a {
+  color: #8f8f8f;
+}
+#footer .footer-top-item .detail-btn {
+  display: flex;
+}
+#footer .footer-top-item .detail-btn .icon {
+  font-size: 16px;
+  line-height: 22px;
+  color: #0ca8c9;
+  padding-right: 22px;
+}
+#footer .footer-top-item .detail-btn .mobile-icon {
+  padding-left: 3px;
+}
+#footer .footer-top-item .detail-btn .mail-icon i {
+  vertical-align: bottom;
+}
+#footer .footer-top-item .detail-btn .text {
+  word-break: break-all;
+  letter-spacing: 0.02em;
+}
+#footer .footer-top-item .detail-btn .lh-20 {
+  line-height: 20px;
+}
+#footer .footer-top-item .detail-btn:hover a {
+  color: #0ca8c9;
+}
+#footer .footer-top-item .detail-item:hover a {
+  color: #0ca8c9;
+}
+#footer .footer-top-item .social {
+  margin-left: -10px;
+}
+#footer .footer-top-item .social .icon {
+  font-size: 13px;
+  line-height: 30px;
+  color: #8f8f8f;
+  padding: 0 10px;
+}
+#footer .footer-top-item .social .icon:hover {
+  color: #0ca8c9;
+}
+#footer .footer-top-item .inner {
+  width: calc(100% / 12 * 8);
+  padding: 0 15px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 3px;
+}
+#footer .footer-top-item .inner .detail {
+  margin-top: 8px;
+  line-height: 36px;
+}
+#footer .footer-bot {
+  padding: 10px 0;
+}
+#footer .footer-bot-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer .footer-bot-inner .copyright {
+  font-size: 12px;
+  font-weight: 500;
+  color: #8f8f8f;
+  letter-spacing: 0.01em;
+}
+#footer .footer-bot-inner .copyright span {
+  color: #0ca8c9;
+}
+#footer .footer-bot-inner .payments {
+  display: flex;
+  margin-right: -14px;
+}
+#footer .footer-bot-inner .payments-item {
+  padding: 0 14px;
+}
+#footer .footer-bot-inner .payments img {
+  display: block;
+  width: 48px;
+}
 /* Responsive */
 @media all and (max-width: 1170px) {
   .slider-content {
@@ -990,6 +1099,16 @@ body {
     box-sizing: border-box;
     text-align: center;
   }
+  #footer .footer-top-item .detail {
+    line-height: 20px;
+  }
+  #footer .footer-top-item .detail-btn .icon {
+    padding-right: 18px;
+  }
+  #footer .footer-top-item .inner {
+    width: 100%;
+    padding: 0;
+  }
 }
 @media all and (max-width: 768px) {
   #menubar .menu-bar-inner nav .navbar {
@@ -1080,6 +1199,26 @@ body {
     padding: 0 15px;
     margin: 15px 0;
     box-sizing: border-box;
+  }
+  #footer .footer-top-item {
+    width: calc(100% / 12 * 12);
+    padding: 0 15px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  #footer .footer-top .right {
+    width: calc(100% / 12 * 4);
+    padding: 0 15px;
+    margin: 15px 0;
+    box-sizing: border-box;
+  }
+  #footer .footer-bot-inner {
+    display: block;
+    text-align: center;
+  }
+  #footer .footer-bot-inner .payments {
+    justify-content: center;
   }
 }
 @media all and (max-width: 576px) {
@@ -1231,6 +1370,49 @@ body {
     padding: 0 15px;
     margin: 15px 0;
     box-sizing: border-box;
+  }
+  #footer .footer-top-item .title {
+    font-size: 15px;
+  }
+  #footer .footer-top-item .detail {
+    font-size: 10px;
+  }
+  #footer .footer-bot-inner .copyright {
+    font-size: 10px;
+  }
+  #footer .footer-bot-inner .payments-item {
+    padding: 0 10px;
+  }
+}
+@media all and (max-width: 375px) {
+  .slider-content {
+    top: 0;
+  }
+  .slider-content-inner {
+    width: calc(100% / 12 * 9);
+    padding: 0 15px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    margin-left: 0;
+  }
+  .slider-content-inner .slide-title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .slider-content-inner .slide-summary {
+    font-size: 10px;
+  }
+  #footer .footer-top-item .title {
+    font-size: 12px;
+  }
+  #footer .footer-top-item .detail {
+    font-size: 8px;
+  }
+  #footer .footer-bot-inner .copyright {
+    font-size: 8px;
+  }
+  #footer .footer-bot-inner .payments img {
+    width: 32px;
   }
 }
 /*# sourceMappingURL=style.css.map */

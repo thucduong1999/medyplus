@@ -168,6 +168,26 @@
             text-align: center;
         }
     }
+    #footer {
+        .footer {
+            &-top {
+                &-item {
+                    .detail {
+                        line-height: 20px;
+                        &-btn {
+                            .icon {
+                                padding-right: 18px;
+                            }
+                        }
+                    }
+                    .inner {
+                        width: 100%;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 768px) {
     #menubar {
@@ -285,6 +305,28 @@
     .brands {
         &-item {
             .col(5);
+        }
+    }
+    #footer {
+        .footer {
+            &-top {
+                &-item {
+                    .col(12);
+                    justify-content: center
+                }
+                .right {
+                    .col(4);
+                }
+            }
+            &-bot {
+                &-inner {
+                    display: block;
+                    text-align: center;
+                    .payments {
+                        justify-content: center;
+                    }
+                }
+            }
         }
     }
 }
@@ -484,7 +526,74 @@
             .col(12);
         }
     }
+    #footer {
+        .footer {
+            &-top {
+                &-item {
+                    .title {
+                        font-size: 15px;
+                    }
+                    .detail {
+                        font-size: 10px;
+                    }
+                }
+            }
+            &-bot {
+                &-inner {
+                    .copyright {
+                        font-size: 10px;
+                    }
+                    .payments {
+                        &-item {
+                            padding: 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 375px) {
-    
+    .slider {
+        &-content {
+            top: 0;
+            &-inner {
+                .col(9);
+                margin-left: 0;
+                .slide-title {
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+                .slide-summary {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    #footer {
+        .footer {
+            &-top {
+                &-item {
+                    .title {
+                        font-size: 12px;
+                    }
+                    .detail {
+                        font-size: 8px;
+                    }
+                }
+            }
+            &-bot {
+                &-inner {
+                    .copyright {
+                        font-size: 8px;
+                    }
+                    .payments {
+                        img {
+                            width: 32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
