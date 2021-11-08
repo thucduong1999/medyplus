@@ -161,6 +161,10 @@ body {
   background-color: #fff;
   color: #000;
 }
+#header .header-top-inner .sl-language .dropdown-opt:hover a,
+#header .header-top-inner .sl-language a:hover a {
+  color: #000;
+}
 #header .header-bot {
   padding-top: 26px;
   padding-bottom: 27px;
