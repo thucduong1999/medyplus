@@ -667,13 +667,33 @@ body {
 .top-selling .add-to-cart .my-cart {
   width: 60%;
   background-color: #fff;
+  padding: 15px;
 }
-.top-selling .add-to-cart .my-cart .title {
+.top-selling .add-to-cart .my-cart .border .title {
   text-align: center;
   color: black;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
+}
+.top-selling .add-to-cart .my-cart .border .description {
+  text-align: center;
+  color: #8f8f8f;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 120px 0;
+}
+.top-selling .add-to-cart .my-cart .border .cart-btn {
+  text-align: center;
+  align-items: flex-end;
+}
+.top-selling .add-to-cart .my-cart .border .cart-btn button {
+  font-size: 16px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  padding: 5px 30px;
+  border: 1px solid #0ca8c9;
+  background-color: #0ca8c9;
 }
 .top-selling .active-cart {
   transform: translateY(0);

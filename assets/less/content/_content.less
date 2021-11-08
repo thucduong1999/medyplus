@@ -144,12 +144,34 @@
         .my-cart {
             width: 60%;
             background-color: @color-white;
-            .title {
-                text-align: center;
-                color: black;
-                font-size: 24px;
-                font-weight: 500;
-                text-transform: uppercase;
+            padding: 15px;
+            .border {
+                .title {
+                    text-align: center;
+                    color: black;
+                    font-size: 24px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+                .description {
+                    text-align: center;
+                    color: @color-8f8f8f;
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding: 120px 0;
+                }
+                .cart-btn {
+                    text-align: center;
+                    align-items: flex-end;
+                    button {
+                        font-size: 16px;
+                        font-family: 'Poppins';
+                        font-weight: 500;
+                        padding: 5px 30px;
+                        border: 1px solid #0ca8c9;
+                        background-color: #0ca8c9;
+                    }
+                }
             }
         }
     }
