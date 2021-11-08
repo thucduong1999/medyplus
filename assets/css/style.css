@@ -784,6 +784,7 @@ body {
   color: #000;
   padding-top: 25px;
   padding-bottom: 8px;
+  word-break: break-word;
 }
 .news-item-content .time {
   font-size: 12px;
