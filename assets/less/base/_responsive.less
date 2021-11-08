@@ -41,6 +41,17 @@
                             }
                         }
                     }
+                    .sl-language {
+                        .dropdown {
+                            &-content {
+                                .transition(all, .5s);
+                                display: none;
+                            }
+                            .active-drop-language {
+                                display: block;
+                            }
+                        }
+                    }
                 }
             }
             &-bot {
@@ -71,7 +82,15 @@
         .menu-bar {
             &-inner {
                 .menu-category {
-                    display: none;
+                    .dropdown {
+                        &-content {
+                            .transition(all, .5s);
+                            display: none;
+                        }
+                        .active-drop-category {
+                            display: block;
+                        }
+                    }
                 }
                 nav {
                     margin-left: auto;

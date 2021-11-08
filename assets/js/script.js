@@ -1,9 +1,35 @@
 $(document).ready(function () {
     // Click để hiện thông tin web
-    $('.web-info-btn').click(function (e) { 
+    if (screen.width <= 1024) {
+        $('.web-info-btn').click(function (e) { 
+            e.preventDefault();
+            $(this).find('.info-content').toggle('show');
+            $(this).siblings().toggle('hidden');
+        });
+    }
+    // Click để hiện dropdown language
+    $('.language-btn').click(function (e) { 
         e.preventDefault();
-        $(this).find('.info-content').toggle('show');
-        $(this).siblings().toggle('hidden');
+        $('.dropdown-content').addClass('active-drop-language');
+        $('.cover').addClass('active-drop-language');
+    });
+    $('.cover').click(function (e) { 
+        e.preventDefault();
+        $('.dropdown-content').removeClass('active-drop-language');
+        $('.cover').removeClass('active-drop-language');
+
+    });
+    // Click để hiện dropdown category
+    $('.cate-btn').click(function (e) { 
+        e.preventDefault();
+        $('.dropdown-content').addClass('active-drop-category');
+        $('.cover').addClass('active-drop-category');
+    });
+    $('.cover').click(function (e) { 
+        e.preventDefault();
+        $('.dropdown-content').removeClass('active-drop-category');
+        $('.cover').removeClass('active-drop-category');
+
     });
     // Click để hiện navigation
     $('.nav-icon').click(function (e) { 
