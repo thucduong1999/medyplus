@@ -83,6 +83,9 @@
                     .dropdown-btn::after {
                         margin-inline-start: 24px;
                     }
+                    .dropdown:hover {
+                        cursor: pointer;
+                    }
                     .dropdown-opt,
                     a {
                         color: @color-bababa;
@@ -136,6 +139,9 @@
                                 font-weight: 500;
                                 font-size: 12px;
                                 color: @color-8f8f8f;
+                                &:hover {
+                                    cursor: pointer;
+                                }
                             }
                         }
                         .search-input {
@@ -165,6 +171,12 @@
                                 line-height: 38px;
                                 width: 57px;
                                 text-align: center;
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                                &:active {
+                                    opacity: 0.8;
+                                }
                             }
                         }
                     }

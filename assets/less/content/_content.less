@@ -145,32 +145,31 @@
             width: 60%;
             background-color: @color-white;
             padding: 15px;
-            .border {
-                .title {
-                    text-align: center;
-                    color: black;
-                    font-size: 24px;
-                    font-weight: 600;
-                    text-transform: uppercase;
-                }
-                .description {
-                    text-align: center;
-                    color: @color-8f8f8f;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .title {
+                text-align: center;
+                color: black;
+                font-size: 24px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            .description {
+                text-align: center;
+                color: @color-8f8f8f;
+                font-size: 16px;
+                font-weight: 500;
+            }
+            .cart-btn {
+                text-align: center;
+                button {
                     font-size: 16px;
+                    font-family: 'Poppins';
                     font-weight: 500;
-                    padding: 120px 0;
-                }
-                .cart-btn {
-                    text-align: center;
-                    align-items: flex-end;
-                    button {
-                        font-size: 16px;
-                        font-family: 'Poppins';
-                        font-weight: 500;
-                        padding: 5px 30px;
-                        border: 1px solid #0ca8c9;
-                        background-color: #0ca8c9;
-                    }
+                    padding: 5px 30px;
+                    border: 1px solid #0ca8c9;
+                    background-color: #0ca8c9;
                 }
             }
         }
@@ -362,6 +361,7 @@
     }
 }
 
+//News letter
 .newsletter {
     background-color: @color-222;
     &-inner {
@@ -429,6 +429,12 @@
                         text-align: center;
                         border-radius: 58px;
                         text-transform: uppercase;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                        &:active {
+                            opacity: 0.8;
+                        }
                     }
                 }
             }
@@ -436,6 +442,7 @@
     }
 }
 
+//brands
 .brands {
     background-color: @color-white;
     padding-top: 41px;

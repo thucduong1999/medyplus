@@ -160,6 +160,9 @@ body {
 #header .header-top-inner .sl-language .dropdown-btn::after {
   margin-inline-start: 24px;
 }
+#header .header-top-inner .sl-language .dropdown:hover {
+  cursor: pointer;
+}
 #header .header-top-inner .sl-language .dropdown-opt,
 #header .header-top-inner .sl-language a {
   color: #bababa;
@@ -221,6 +224,9 @@ body {
   font-size: 12px;
   color: #8f8f8f;
 }
+#header .header-bot .form-control .search form .search-sl select:hover {
+  cursor: pointer;
+}
 #header .header-bot .form-control .search form .search-input {
   flex: 1;
   line-height: 38px;
@@ -247,6 +253,12 @@ body {
   line-height: 38px;
   width: 57px;
   text-align: center;
+}
+#header .header-bot .form-control .search form .search-btn button:hover {
+  cursor: pointer;
+}
+#header .header-bot .form-control .search form .search-btn button:active {
+  opacity: 0.8;
 }
 #header .header-bot .form-control .control-item {
   color: #0ca8c9;
@@ -668,26 +680,27 @@ body {
   width: 60%;
   background-color: #fff;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.top-selling .add-to-cart .my-cart .border .title {
+.top-selling .add-to-cart .my-cart .title {
   text-align: center;
   color: black;
   font-size: 24px;
   font-weight: 600;
   text-transform: uppercase;
 }
-.top-selling .add-to-cart .my-cart .border .description {
+.top-selling .add-to-cart .my-cart .description {
   text-align: center;
   color: #8f8f8f;
   font-size: 16px;
   font-weight: 500;
-  padding: 120px 0;
 }
-.top-selling .add-to-cart .my-cart .border .cart-btn {
+.top-selling .add-to-cart .my-cart .cart-btn {
   text-align: center;
-  align-items: flex-end;
 }
-.top-selling .add-to-cart .my-cart .border .cart-btn button {
+.top-selling .add-to-cart .my-cart .cart-btn button {
   font-size: 16px;
   font-family: 'Poppins';
   font-weight: 500;
@@ -962,6 +975,12 @@ body {
   text-align: center;
   border-radius: 58px;
   text-transform: uppercase;
+}
+.newsletter-control .newsletter-input form .email-btn button:hover {
+  cursor: pointer;
+}
+.newsletter-control .newsletter-input form .email-btn button:active {
+  opacity: 0.8;
 }
 .brands {
   background-color: #fff;
