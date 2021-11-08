@@ -658,7 +658,7 @@ body {
   background-color: transparent;
   top: 0;
   z-index: 999;
-  height: 50vh;
+  height: 60vh;
   max-width: 1170px;
   width: 100%;
   display: flex;
@@ -670,7 +670,6 @@ body {
 }
 .top-selling .add-to-cart .my-cart .title {
   text-align: center;
-  margin: 0 auto;
   color: black;
   font-size: 24px;
   font-weight: 500;
@@ -839,6 +838,10 @@ body {
   display: block;
   width: 100%;
 }
+.news-item img:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
 .news-item-content {
   letter-spacing: 0.02em;
 }
@@ -851,14 +854,19 @@ body {
   padding-bottom: 8px;
   word-break: break-word;
 }
+.news-item-content .title:hover {
+  cursor: pointer;
+  color: #0ca8c9;
+}
 .news-item-content .time {
   font-size: 12px;
   font-weight: 500;
   line-height: 24px;
   color: #8f8f8f;
 }
-.news-item-content .time span {
+.news-item-content .time a {
   color: #0ca8c9;
+  text-decoration: none;
 }
 .newsletter {
   background-color: #222;
@@ -905,9 +913,11 @@ body {
   line-height: 68px;
 }
 .newsletter-control .newsletter-input form .email-input input {
+  font-family: 'Poppins';
+  font-weight: 500;
   width: 100%;
   border: none;
-  height: 58px;
+  height: 50px;
   margin: 0 20px;
   padding: 0 10px;
 }

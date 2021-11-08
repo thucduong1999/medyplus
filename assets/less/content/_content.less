@@ -136,7 +136,7 @@
         background-color: transparent;
         top: 0;
         z-index: 999;
-        height: 50vh;
+        height: 60vh;
         max-width: 1170px;
         width: 100%;
         display: flex;
@@ -146,7 +146,6 @@
             background-color: @color-white;
             .title {
                 text-align: center;
-                margin: 0 auto;
                 color: black;
                 font-size: 24px;
                 font-weight: 500;
@@ -306,6 +305,10 @@
         img {
             display: block;
             width: 100%;
+            &:hover {
+                cursor: pointer;
+                opacity: 0.9;
+            }
         }
         overflow: hidden;
         &-content {
@@ -318,14 +321,19 @@
                 padding-top: 25px;
                 padding-bottom: 8px;
                 word-break: break-word;
+                &:hover {
+                    cursor: pointer;
+                    color: @color-0ca8c9;
+                }
             }
             .time {
                 font-size: 12px;
                 font-weight: 500;
                 line-height: 24px;
                 color: @color-8f8f8f;
-                span {
+                a {
                     color: @color-0ca8c9;
+                    text-decoration: none;
                 }
             }
         }
@@ -370,9 +378,11 @@
                     flex: 1;
                     line-height: 68px;
                     input {
+                        font-family: 'Poppins';
+                        font-weight: 500;
                         width: 100%;
                         border: none;
-                        height: 58px;
+                        height: 50px;
                         margin: 0 20px;
                         padding: 0 10px;
                         &::placeholder {
