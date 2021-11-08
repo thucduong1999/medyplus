@@ -41,4 +41,15 @@ $(document).ready(function () {
         $('.navbar').removeClass('active');
         $('.cover').removeClass('active');
     });
+    // Click để hiện Cart
+    $('.top-selling-item').click(function (e) { 
+        e.preventDefault();
+        $('.add-to-cart').addClass('active-cart');
+        $('.cover').addClass('active-cart');
+    });
+    $('.cover').click(function (e) { 
+        e.preventDefault();
+        $('.add-to-cart').removeClass('active-cart');
+        $('.cover').removeClass('active-cart');
+    });
 });
