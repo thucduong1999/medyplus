@@ -1,20 +1,20 @@
 /* Source */
 @font-face {
   font-family: 'Poppins';
-  src: url(/assets/fonts/Poppins/Poppins-Medium.ttf);
+  src: url('../fonts/Poppin/Poppins-Medium.ttf');
   font-weight: 500;
 }
 @font-face {
   font-family: 'Poppins';
-  src: url(/assets/fonts/Poppins/Poppins-Regular.ttf);
+  src: url('../fonts/Poppin/Poppins-Regular.ttf');
   font-weight: 400;
 }
 @font-face {
   font-family: 'Poppins';
-  src: url(/assets/fonts/Poppins/Poppins-SemiBold.ttf);
+  src: url('../fonts/Poppin/Poppins-SemiBold.ttf');
   font-weight: 600;
 }
-/* Header Footer*/
+/* Header */
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +57,7 @@ body {
   display: block;
 }
 .dropdown-btn::after {
-  content: url(/assets/img/down-arrow.png);
+  content: url('../img/down-arrow.png');
   vertical-align: middle;
 }
 .dropdown-content {
@@ -214,7 +214,7 @@ body {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url(/assets/img/down-arrow.png);
+  background-image: url('../img/down-arrow.png');
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: center;
@@ -790,6 +790,25 @@ body {
   box-sizing: border-box;
   margin: 27px 0;
 }
+.top-selling-item .box {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+.top-selling-item .box-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.top-selling-item .img {
+  padding-top: 100%;
+}
+.top-selling-item .img .background {
+  width: 100%;
+  box-sizing: border-box;
+}
 .top-selling-item img {
   width: 100%;
 }
@@ -835,7 +854,7 @@ body {
 .news {
   margin-top: 30px;
   padding: 80px 0;
-  background: url('/assets/img/background_news.jpg') top center / cover no-repeat;
+  background: url('../img/background_news.jpg') top center / cover no-repeat;
 }
 .news-place {
   text-align: center;
@@ -867,9 +886,22 @@ body {
   box-sizing: border-box;
   overflow: hidden;
 }
+.news-item .box {
+  position: relative;
+  width: 100%;
+  padding-top: calc((241/360)*100%);
+}
+.news-item .box-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .news-item img {
   display: block;
   width: 100%;
+  height: 100%;
 }
 .news-item img:hover {
   cursor: pointer;
